@@ -5,7 +5,7 @@ const MovieForm = props => {
     <form onSubmit={props.handleSubmit}>
       <input type='text' placeholder='Add a Movie' value={props.movie} onChange={props.handleChange} />
       <input type='submit' value='Add to List' />
-    </form
+    </form>
   )
 }
 

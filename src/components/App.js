@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MovieList from './MovieList';
+import MovieForm from './MovieForm';
 
 class App extends Component {
   constructor(props) {
@@ -44,8 +45,8 @@ class App extends Component {
         <h1>Movies to Watch</h1>
 
         <MovieList movies={this.state.movieData} handleButtonClick={this.handleClick}/>
+        <MovieForm handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
       </div>
-      <MovieForm handleChange={this.handleChange} />
     );
   }
 };
