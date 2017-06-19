@@ -6,7 +6,7 @@ const MovieList = props => {
     return(
       <Movie
         key={movie.id}
-        name={movie.title}
+        title={movie.title}
         handleButtonClick={props.handleButtonClick}
       />
     )
