@@ -4,7 +4,11 @@ import Movie from './Movie';
 const MovieList = props => {
   let movies = props.movies.map(movie => {
     return(
-      <Movie name={movie} handleButtonClick={props.handleButtonClick} />
+      <Movie
+        key={movie.id}
+        name={movie.title}
+        handleButtonClick={props.handleButtonClick}
+      />
     )
   })
 

@@ -8,9 +8,9 @@ class App extends Component {
 
     this.state = {
       movieData: [
-        "Lady and the Tramp",
-        "Sleeping Beauty",
-        "The Jungle Book"
+        { key: 1, title: "Lady and the Tramp" },
+        { key: 2, title: "Sleeping Beauty" },
+        { key: 3, title: "The Jungle Book" }
       ],
       movie: ''
     }
@@ -22,7 +22,11 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let newMovie = this.state.movie
+    let newId = this.state.movieData.length + 1
+    let newMovie = {
+      id: newId,
+      title: this.state.movie
+    }
     let newMovies = this.state.movieData.concat(newMovie)
     this.setState({
       movieData: newMovies,
