@@ -49,7 +49,7 @@ class App extends Component {
         <h1>Movies to Watch</h1>
 
         <MovieList movies={this.state.movieData} handleButtonClick={this.handleClick}/>
-        <MovieForm handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+        <MovieForm handleChange={this.handleChange} handleSubmit={this.handleSubmit} movie={this.state.movie}/>
       </div>
     );
   }
