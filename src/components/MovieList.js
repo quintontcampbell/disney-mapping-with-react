@@ -5,7 +5,7 @@ const MovieList = props => {
   let movies = props.movies.map(movie => {
     return(
       <Movie
-        key={movie.id}
+        key={movie.key}
         title={movie.title}
         handleButtonClick={props.handleButtonClick}
       />
