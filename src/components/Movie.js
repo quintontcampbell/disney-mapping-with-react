@@ -4,7 +4,7 @@ const Movie = (props) => {
   return(
     <li>
       {props.title}
-      <button type="button" onClick={props.handleButtonClick}>Delete</button>
+      <button type="button">See Songs for This Movie</button>
     </li>
   )
 }

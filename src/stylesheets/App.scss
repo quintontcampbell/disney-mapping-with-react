@@ -7,7 +7,6 @@ $green: #1ab28a;
 .movie-container {
   background-color: lighten( $teal, 10% );
   width: 75%;
-  height: 300px;
   margin: auto;
   border-radius: 5%;
   padding-left: 10px;
@@ -31,8 +30,19 @@ $green: #1ab28a;
     margin-bottom: 10px;
   }
 
+  h2 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    color: $blue;
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
   button {
-    margin: 5px;
+    margin: 15px;
+    background-color: $yellow;
   }
 
   form {
