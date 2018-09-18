@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import MovieList from '../containers/MovieList';
-import SongList from '../containers/SongList';
 
 const App = props => {
   let handleClick = id => {
@@ -15,14 +13,6 @@ const App = props => {
   return(
     <div className='movie-container'>
       <h1>Movies to Watch</h1>
-
-      <MovieList
-        movies={props.data.movies}
-        handleButtonClick={handleClick}
-      />
-      <SongList
-        songs={props.data.songs}
-      />
     </div>
   );
 };
