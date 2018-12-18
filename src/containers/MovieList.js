@@ -1,5 +1,5 @@
 import React from 'react';
-import Movie from '../components/Movie';
+import MovieTile from '../components/MovieTile';
 
 const MovieList = props => {
   let movies = props.movies.map(movie => {
@@ -8,7 +8,7 @@ const MovieList = props => {
     }
 
     return(
-      <Movie
+      <MovieTile
         key={movie.id}
         title={movie.title}
         handleButtonClick={handleClick}

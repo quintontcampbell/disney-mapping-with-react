@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Song = (props) => {
+const SongTile = (props) => {
   return(
     <li>
       {props.title}
@@ -8,4 +8,4 @@ const Song = (props) => {
   )
 }
 
-export default Song;
+export default SongTile;

@@ -1,10 +1,10 @@
 import React from 'react';
-import Song from '../components/Song';
+import SongTile from '../components/SongTile';
 
 const SongList = props => {
   let songs = props.songs.map(song => {
     return(
-      <Song
+      <SongTile
         key={song.id}
         title={song.title}
       />
@@ -22,4 +22,3 @@ const SongList = props => {
 };
 
 export default SongList;
-  
