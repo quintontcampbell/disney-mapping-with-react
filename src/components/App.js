@@ -3,8 +3,8 @@ import MovieList from '../containers/MovieList';
 import SongList from '../containers/SongList';
 
 const App = props => {
-  let handleClick = id => {
-    let specificSongs = props.data.songs.filter(song => song.movieId === id)
+  let handleClick = clickedMovieId => {
+    let specificSongs = props.data.songs.filter(song => song.movieId === clickedMovieId)
     let alertMessage = `The songs for this movie are:\n`
     specificSongs.forEach(song => {
       alertMessage += `${song.title}\n`
