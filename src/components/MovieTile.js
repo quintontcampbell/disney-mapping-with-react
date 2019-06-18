@@ -4,7 +4,12 @@ const MovieTile = (props) => {
   return(
     <li>
       {props.title}
-      <button type="button">See Songs for This Movie</button>
+      <button
+        type="button"
+        onClick={props.clickButton}
+      >
+        See Songs for This Movie
+      </button>
     </li>
   )
 }
