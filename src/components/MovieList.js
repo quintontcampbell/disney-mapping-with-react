@@ -21,7 +21,7 @@ const MovieList = props => {
 
   return (
     <div>
-      <h2>All The Songs</h2>
+      <h2>All The Movies</h2>
       {movies}
     </div>
   )
