@@ -1,4 +1,6 @@
 import React from 'react';
+import MovieList from './MovieList'
+import SongList from './SongList'
 
 const App = props => {
   let handleClick = clickedMovieId => {
@@ -13,6 +15,13 @@ const App = props => {
   return(
     <div className='movie-container'>
       <h1>Movies to Watch</h1>
+        <MovieList
+          movies={props.data.movies}
+          handleClick={handleClick}
+       />
+       <SongList
+        songs={props.data.songs}
+       />
     </div>
   );
 };
