@@ -1,9 +1,9 @@
 ---
-title: "React Grocery List"
+title: "Disney mapping with React"
 type: "exercise"
-description: "Create a Grocery List in React"
+description: "Use .map to dynamically display a list of movies and songs"
 tags: "React, stateful components, nested components"
 ignore:
 - "node_modules/"
-- "react-notes-stateful.md"
+- "disney-mapping-with-react.md"
 ---
