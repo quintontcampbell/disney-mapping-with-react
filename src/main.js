@@ -5,6 +5,8 @@ import App from './components/App';
 import data from './constants/data';
 
 ReactDOM.render(
-  <App data={data}/>,
+  <App 
+    data={data}
+  />,
   document.getElementById('app')
 );
