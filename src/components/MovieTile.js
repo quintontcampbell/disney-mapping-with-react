@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 const MovieTile = (props) => {
   return(
@@ -9,4 +9,4 @@ const MovieTile = (props) => {
   )
 }
 
-export default MovieTile;
+export default MovieTile

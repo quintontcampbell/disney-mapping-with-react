@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 const App = props => {
   let handleClick = clickedMovieId => {
@@ -11,10 +11,10 @@ const App = props => {
   }
 
   return(
-    <div className='movie-container'>
+    <div className="movie-container">
       <h1>Movies to Watch</h1>
     </div>
   );
 };
 
-export default App;
+export default App
